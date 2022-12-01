@@ -52,9 +52,9 @@ class Plugin(MetaExtractionPlugin):
             # Calculate USD wallet value and store in Hansken
             wallet_dollar_value = matic_balance * matic_usd_value
             # trace.update("crypto.matic.value", wallet_dollar_value)
-            balance = {"balance": f"{str(matic_balance)} MATIC", "dollar_value" : f"${str(wallet_dollar_value)}"}
+            t_balance = {"balance": f"{str(matic_balance)} MATIC", "dollar_value" : f"${str(wallet_dollar_value)}"}
             
-            trace.update("account.misc", balance)
+            trace.update("account.misc", t_balance)
 
 
 
